@@ -1,0 +1,1052 @@
+{
+	"id": "aa7ef04c-4ac2-46d9-8eb1-95d3e4d204a6",
+	"name": ".Dmoney-Trxn-API-Flow",
+	"timestamp": "2025-11-20T10:32:11.684Z",
+	"collection_id": "41198784-4be28ede-146d-450f-bdaa-a75e39f5942a",
+	"folder_id": 0,
+	"environment_id": "41198784-f1635567-eabc-4842-ab1b-da8cb3210e6f",
+	"totalPass": 79,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-11-20T10:31:58.577Z",
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "0467998f-1df0-418b-92c7-3f07b4440fa9",
+			"name": "Login With Valid Credentials",
+			"url": "http://dmoney.roadtocareer.net/user/login",
+			"time": 326,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"Authentication Success Massage Validation": true,
+				" Verify the system displays the correct role Validation": true,
+				"Token Expire Time  Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authentication Success Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				" Verify the system displays the correct role Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token Expire Time  Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				326
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"Authentication Success Massage Validation": true,
+					" Verify the system displays the correct role Validation": true,
+					"Token Expire Time  Validation": true
+				}
+			]
+		},
+		{
+			"id": "f36f979b-21ac-402a-a8fe-f10d37ba0d32",
+			"name": "Users List",
+			"url": "http://dmoney.roadtocareer.net/user/list",
+			"time": 809,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"User List Massage Validation": true,
+				" Total User Count Validation": true,
+				"User Id Validation ": true,
+				"User Email Validation ": true,
+				"User Role Validation ": true,
+				"10th User ID Validation": true,
+				"10th User Name Validation ": true,
+				"10th User Email Validation ": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User List Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				" Total User Count Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Id Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Email Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Role Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"10th User ID Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"10th User Name Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"10th User Email Validation ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				809
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"User List Massage Validation": true,
+					" Total User Count Validation": true,
+					"User Id Validation ": true,
+					"User Email Validation ": true,
+					"User Role Validation ": true,
+					"10th User ID Validation": true,
+					"10th User Name Validation ": true,
+					"10th User Email Validation ": true
+				}
+			]
+		},
+		{
+			"id": "10e46b02-d82d-4d23-bac1-5bcec82d6b36",
+			"name": "Create New User",
+			"url": "http://dmoney.roadtocareer.net/user/create",
+			"time": 130,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"User Name Validation": true,
+				"Email Validation": true,
+				"Phone Number Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Name Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Phone Number Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				130
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"User Name Validation": true,
+					"Email Validation": true,
+					"Phone Number Validation": true
+				}
+			]
+		},
+		{
+			"id": "ef658433-c974-4123-997b-94f0e4d36a1e",
+			"name": "Search user by ID",
+			"url": "http://dmoney.roadtocareer.net/user/search/id/99260",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"User Id Based Massage Validation": true,
+				"User Id Validation ": true,
+				"User Name Validation ": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Id Based Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Id Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Name Validation ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"User Id Based Massage Validation": true,
+					"User Id Validation ": true,
+					"User Name Validation ": true
+				}
+			]
+		},
+		{
+			"id": "8bd889b5-b17e-4fb3-b7c0-be6c616f0392",
+			"name": "Create Agent",
+			"url": "http://dmoney.roadtocareer.net/user/create",
+			"time": 113,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"User Name Validation ": true,
+				"Email Validation": true,
+				"Phone Number Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Name Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Phone Number Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				113
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"User Name Validation ": true,
+					"Email Validation": true,
+					"Phone Number Validation": true
+				}
+			]
+		},
+		{
+			"id": "ab8ada10-aaf0-4010-9e76-50cd333b7787",
+			"name": "Agent Search by ID",
+			"url": "http://dmoney.roadtocareer.net/user/search/id/99249",
+			"time": 152,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"User Id Based Massage Validation": true,
+				"User Id Validation ": true,
+				"User Name Validation ": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Id Based Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Id Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Name Validation ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				152
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"User Id Based Massage Validation": true,
+					"User Id Validation ": true,
+					"User Name Validation ": true
+				}
+			]
+		},
+		{
+			"id": "37cce9d7-88ea-41b0-af56-f842e230a136",
+			"name": "Create Merchant",
+			"url": "http://dmoney.roadtocareer.net/user/create",
+			"time": 109,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"User Name Validation ": true,
+				"Email Validation": true,
+				"Phone Number Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Name Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Phone Number Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				109
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"User Name Validation ": true,
+					"Email Validation": true,
+					"Phone Number Validation": true
+				}
+			]
+		},
+		{
+			"id": "c7e112a7-0b0a-4faa-bd70-53bf7a83bc99",
+			"name": "Merchant Search By ID",
+			"url": "http://dmoney.roadtocareer.net/user/search/id/99251",
+			"time": 151,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"User Id Based Massage Validation": true,
+				"User Id Validation ": true,
+				"User Name Validation ": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Id Based Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Id Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Name Validation ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				151
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"User Id Based Massage Validation": true,
+					"User Id Validation ": true,
+					"User Name Validation ": true
+				}
+			]
+		},
+		{
+			"id": "e469c4a3-640b-4d75-9f47-2d17b7ddaaf0",
+			"name": "Full update user by ID",
+			"url": "http://dmoney.roadtocareer.net/user/update/28603",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"Upated User Massage Validation ": true,
+				"User Name Validation ": true,
+				"User Email Validation ": true,
+				"User Phone Number Validation ": true,
+				"User NID Number  Validation ": true,
+				"User Role Validation ": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Upated User Massage Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Name Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Email Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Phone Number Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User NID Number  Validation ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User Role Validation ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				83
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"Upated User Massage Validation ": true,
+					"User Name Validation ": true,
+					"User Email Validation ": true,
+					"User Phone Number Validation ": true,
+					"User NID Number  Validation ": true,
+					"User Role Validation ": true
+				}
+			]
+		},
+		{
+			"id": "3c0d6479-f3df-4d91-ac3e-233b08d1198c",
+			"name": "Previous System Available Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/SYSTEM",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Status 200": true
+				}
+			]
+		},
+		{
+			"id": "2c20c15f-78a9-4822-bee2-c71cf391940e",
+			"name": "Agent Previous Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/01502476839",
+			"time": 429,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				429
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9193e0d8-d5ac-4c2d-938f-4f282bdd9ac5",
+			"name": "Deposit money to Agent",
+			"url": "http://dmoney.roadtocareer.net/transaction/deposit",
+			"time": 220,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"Deposite Money Massage Validation": true,
+				"Deposite Money trnxId Validation": true,
+				"Deposite Money commission Validation": true,
+				"Deposite Money currentBalance Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money trnxId Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money commission Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money currentBalance Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				220
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"Deposite Money Massage Validation": true,
+					"Deposite Money trnxId Validation": true,
+					"Deposite Money commission Validation": true,
+					"Deposite Money currentBalance Validation": true
+				}
+			]
+		},
+		{
+			"id": "3e2aa7b1-2b3c-4bac-9c8b-9dc7a89c339a",
+			"name": "Check System Available Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/SYSTEM",
+			"time": 131,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"Balance updated correctly": false
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Balance updated correctly": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				131
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"Balance updated correctly": false
+				}
+			]
+		},
+		{
+			"id": "56099772-cd78-4545-99c2-88f5ed88e01b",
+			"name": "Check Agent Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/01502476839",
+			"time": 433,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Balance updated correctly": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Balance updated correctly": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				433
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Balance updated correctly": true
+				}
+			]
+		},
+		{
+			"id": "747e31c2-01e8-49e9-93eb-cdd74cfc6160",
+			"name": "Customer Previous Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/01502864705",
+			"time": 131,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				131
+			],
+			"allTests": [
+				{
+					"Status 200": true
+				}
+			]
+		},
+		{
+			"id": "53893d6b-df6d-4cac-b0ae-b6065e8a1ca7",
+			"name": "Withdraw money from customer account via agent",
+			"url": "http://dmoney.roadtocareer.net/transaction/withdraw",
+			"time": 185,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"Withdraw successful Money Massage Validation": true,
+				"Withdraw Money trnxId Validation": true,
+				"Withdraw Money fee Validation": true,
+				"Withdraw Money currentBalance Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Withdraw successful Money Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Withdraw Money trnxId Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Withdraw Money fee Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Withdraw Money currentBalance Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"Withdraw successful Money Massage Validation": true,
+					"Withdraw Money trnxId Validation": true,
+					"Withdraw Money fee Validation": true,
+					"Withdraw Money currentBalance Validation": true
+				}
+			]
+		},
+		{
+			"id": "e580be17-e330-4833-ab5d-8510851d8ec7",
+			"name": "Check Customer Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/01502864705",
+			"time": 116,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				" HTTP Status code is 200": true
+			},
+			"testPassFailCounts": {
+				" HTTP Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				116
+			],
+			"allTests": [
+				{
+					" HTTP Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d5492221-a960-4b09-8ecb-2cb91e8bf5e9",
+			"name": "Send money between customer accounts",
+			"url": "http://dmoney.roadtocareer.net/transaction/sendmoney",
+			"time": 191,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"SendMoney Massage Validation": true,
+				"SendMoney trnxId Validation": true,
+				"SendMoney fee Validation": true,
+				"SendMoney currentBalance Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"SendMoney Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"SendMoney trnxId Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"SendMoney fee Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"SendMoney currentBalance Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"SendMoney Massage Validation": true,
+					"SendMoney trnxId Validation": true,
+					"SendMoney fee Validation": true,
+					"SendMoney currentBalance Validation": true
+				}
+			]
+		},
+		{
+			"id": "a024dfd9-8552-43c8-9955-3b36b46eb68e",
+			"name": "Process payment transaction Copy",
+			"url": "http://dmoney.roadtocareer.net/transaction/payment",
+			"time": 553,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"Process payment transaction Massage Validation": true,
+				"Process payment trnxId Validation": true,
+				"Process payment transaction fee Validation": true,
+				"Process payment transaction currentBalance Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Process payment transaction Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Process payment trnxId Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Process payment transaction fee Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Process payment transaction currentBalance Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				553
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"Process payment transaction Massage Validation": true,
+					"Process payment trnxId Validation": true,
+					"Process payment transaction fee Validation": true,
+					"Process payment transaction currentBalance Validation": true
+				}
+			]
+		},
+		{
+			"id": "fe34681c-372e-4463-b24b-f8712554e760",
+			"name": "Merchant Previous Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/01502866303",
+			"time": 159,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				159
+			],
+			"allTests": [
+				{
+					"Status 200": true
+				}
+			]
+		},
+		{
+			"id": "161cd59e-3798-4942-beff-f0e82f604f8d",
+			"name": "Personal (Customer) to Merchant Payment Transaction",
+			"url": "http://dmoney.roadtocareer.net/transaction/payment",
+			"time": 502,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"HTTP status code Validation": true,
+				"Deposite Money Massage Validation": true,
+				"Deposite Money trnxId Validation": true,
+				"Deposite Money commission Validation": true,
+				"Deposite Money currentBalance Validation": true
+			},
+			"testPassFailCounts": {
+				"HTTP status code Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money Massage Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money trnxId Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money commission Validation": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deposite Money currentBalance Validation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				502
+			],
+			"allTests": [
+				{
+					"HTTP status code Validation": true,
+					"Deposite Money Massage Validation": true,
+					"Deposite Money trnxId Validation": true,
+					"Deposite Money commission Validation": true,
+					"Deposite Money currentBalance Validation": true
+				}
+			]
+		},
+		{
+			"id": "1f38e3f7-ed01-409f-81bb-e43747ae8183",
+			"name": "Merchant New Balance",
+			"url": "http://dmoney.roadtocareer.net/transaction/balance/01502866303",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"HTTP Status 200": true,
+				"Merchant balance updated correctly": false
+			},
+			"testPassFailCounts": {
+				"HTTP Status 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Merchant balance updated correctly": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				128
+			],
+			"allTests": [
+				{
+					"HTTP Status 200": true,
+					"Merchant balance updated correctly": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5348,
+	"collection": {
+		"requests": [
+			{
+				"id": "0467998f-1df0-418b-92c7-3f07b4440fa9",
+				"method": "POST"
+			},
+			{
+				"id": "f36f979b-21ac-402a-a8fe-f10d37ba0d32",
+				"method": "GET"
+			},
+			{
+				"id": "10e46b02-d82d-4d23-bac1-5bcec82d6b36",
+				"method": "POST"
+			},
+			{
+				"id": "ef658433-c974-4123-997b-94f0e4d36a1e",
+				"method": "GET"
+			},
+			{
+				"id": "8bd889b5-b17e-4fb3-b7c0-be6c616f0392",
+				"method": "POST"
+			},
+			{
+				"id": "ab8ada10-aaf0-4010-9e76-50cd333b7787",
+				"method": "GET"
+			},
+			{
+				"id": "37cce9d7-88ea-41b0-af56-f842e230a136",
+				"method": "POST"
+			},
+			{
+				"id": "c7e112a7-0b0a-4faa-bd70-53bf7a83bc99",
+				"method": "GET"
+			},
+			{
+				"id": "e469c4a3-640b-4d75-9f47-2d17b7ddaaf0",
+				"method": "PUT"
+			},
+			{
+				"id": "3c0d6479-f3df-4d91-ac3e-233b08d1198c",
+				"method": "GET"
+			},
+			{
+				"id": "2c20c15f-78a9-4822-bee2-c71cf391940e",
+				"method": "GET"
+			},
+			{
+				"id": "9193e0d8-d5ac-4c2d-938f-4f282bdd9ac5",
+				"method": "POST"
+			},
+			{
+				"id": "3e2aa7b1-2b3c-4bac-9c8b-9dc7a89c339a",
+				"method": "GET"
+			},
+			{
+				"id": "56099772-cd78-4545-99c2-88f5ed88e01b",
+				"method": "GET"
+			},
+			{
+				"id": "747e31c2-01e8-49e9-93eb-cdd74cfc6160",
+				"method": "GET"
+			},
+			{
+				"id": "53893d6b-df6d-4cac-b0ae-b6065e8a1ca7",
+				"method": "POST"
+			},
+			{
+				"id": "e580be17-e330-4833-ab5d-8510851d8ec7",
+				"method": "GET"
+			},
+			{
+				"id": "d5492221-a960-4b09-8ecb-2cb91e8bf5e9",
+				"method": "POST"
+			},
+			{
+				"id": "a024dfd9-8552-43c8-9955-3b36b46eb68e",
+				"method": "POST"
+			},
+			{
+				"id": "fe34681c-372e-4463-b24b-f8712554e760",
+				"method": "GET"
+			},
+			{
+				"id": "161cd59e-3798-4942-beff-f0e82f604f8d",
+				"method": "POST"
+			},
+			{
+				"id": "1f38e3f7-ed01-409f-81bb-e43747ae8183",
+				"method": "GET"
+			}
+		]
+	}
+}
