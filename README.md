@@ -1,239 +1,241 @@
-# Dmoney Transaction API
+# Dmoney Transaction API 
 
-A complete backend solution for handling digital money transactions including customer, agent, and merchant operations. This project provides secure authentication, account handling, money transfers, deposits, withdrawals, and transaction history management.
-
----
-
-## 🚀 Features
-
-* JWT‑based secure authentication
-* Customer, Agent & Merchant account management
-* Balance check & balance update
-* Payment transaction (customer/agent → merchant)
-* Deposit & withdrawal transactions
-* Transaction history APIs
-* API input validation & proper error handling
-* Follows clean folder structure
-* Postman collection included for testing
+A complete API test Dmoney Transaction System using Postman.  
+This collection covers authentication, user management, transaction workflows, balance validation, and payment operations with automated test assertions and dynamic environment handling.
 
 ---
 
-## 🏗️ Project Structure
+# Project Overview
 
-```
-project-root/
-├── src/
-│   ├── controllers/
-│   ├── routes/
-│   ├── middlewares/
-│   ├── services/
-│   ├── models/
-│   └── utils/
-├── config/
-├── tests/
-├── .env
-├── package.json
+This project automates end-to-end API testing for the Dmoney Transaction System.
+
+The collection includes:
+
+- Authentication API
+- User Management APIs
+- Agent Operations
+- Merchant Operations
+- Deposit Transactions
+- Withdraw Transactions
+- Send Money Transactions
+- Payment Transactions
+- Balance Verification
+- Dynamic Environment Variables
+- Automated Response Assertions
+
+---
+
+# Tech Stack
+
+- Postman
+- JavaScript
+- REST API
+- JSON
+
+---
+
+# Project Structure
+
+```bash
+.
+├── Dmoney-API.postman_environment.json
+├── .Dmoney-Trxn-API-Flow.postman_collection.json
 └── README.md
 ```
 
 ---
 
-## 🔧 Tech Stack
+# Modules Covered
 
-* **Node.js**
-* **JWT Authentication**
-* **Bcrypt Password Hashing**
+## Authentication
+- Login with valid credentials
 
----
+## User Management
+- Users List
+- Create New User
+- Search User by ID
+- Full Update User
 
-## 📦 Installation & Setup
+## Agent Operations
+- Create Agent
+- Agent Search by ID
+- Deposit Money to Agent
+- Agent Balance Validation
 
-### 1️⃣ Clone the repository
+## Merchant Operations
+- Create Merchant
+- Merchant Search by ID
+- Merchant Balance Validation
 
-```bash
-git clone https://github.com/your-username/dmoney-transaction-api.git
-cd dmoney-transaction-api
-```
+## Customer Transactions
+- Withdraw Money via Agent
+- Send Money Between Customers
+- Customer to Merchant Payment
 
-### 2️⃣ Install dependencies
-
-```bash
-npm install
-```
-
-### 3️⃣ Create `.env` file
-
-Add the following variables:
-
-```
-PORT=5000
-MONGO_URI=your_mongo_connection
-JWT_SECRET=your_secret_key
-```
-
-### 4️⃣ Run the server
-
-```bash
-npm start
-```
-
-Or for development mode:
-
-```bash
-npm run dev
-```
+## Balance Verification
+- System Balance Check
+- Agent Balance Check
+- Customer Balance Check
+- Merchant Balance Check
 
 ---
 
-## 🔐 Authentication Flow
+# Environment Variables
 
-* User registers/logs in
-* Server returns JWT token
-* All protected routes require:
+The following environment variables are required:
 
-```
-Authorization: Bearer <token>
-```
-
----
-
-## 🔗 API Endpoints Summary
-
-### Authentication
-
-| Method | Endpoint         | Description       |
-| ------ | ---------------- | ----------------- |
-| POST   | `/auth/register` | Create account    |
-| POST   | `/auth/login`    | Login and get JWT |
-
-### Account Operations
-
-| Method | Endpoint               | Description           |
-| ------ | ---------------------- | --------------------- |
-| GET    | `/account/:id`         | Get user account info |
-| GET    | `/account/balance/:id` | Get balance           |
-
-### Transaction APIs
-
-| Method | Endpoint                   | Description                    |
-| ------ | -------------------------- | ------------------------------ |
-| POST   | `/transaction/deposit`     | Cash-in by Agent to Customer   |
-| POST   | `/transaction/withdraw`    | Cash-out by Customer via Agent |
-| POST   | `/transaction/payment`     | Pay Merchant                   |
-| GET    | `/transaction/history/:id` | Full history                   |
+| Variable | Description |
+|---|---|
+| `BaseURL` | API base URL |
+| `token` | Authentication token |
+| `email` | Login email |
+| `password` | Login password |
+| `UpdateID` | User ID for update operation |
+| `phoneNumber` | Dynamic phone number |
+| `randomId` | Random generated user ID |
+| `agent-phone-number` | Agent account phone number |
+| `customer-phone-number` | Customer account phone number |
+| `Merchant-phone-number` | Merchant account phone number |
+| `amount` | Transaction amount |
+| `prevBalance` | Previous system balance |
+| `agent-prev-balance` | Previous agent balance |
+| `CustomerPrevBalance` | Previous customer balance |
+| `MerchantPrevBalance` | Previous merchant balance |
 
 ---
 
-## 🧪 Testing (Postman)
-
-### ✔ Automated Test Cases (SQA API Testing)
-
-This project includes multiple automated assertion-based test cases using Postman. Below is the categorized list of all tests:
-
----
-
-### 🔹 **General API Status Checks**
-
-* HTTP Status code is 200
-* HTTP Status code Validation
-* Status 200
-
----
-
-### 🔹 **Send Money API Tests**
-
-* SendMoney Message Validation
-* SendMoney trnxId Validation
-* SendMoney fee Validation
-* SendMoney currentBalance Validation
-
----
-
-### 🔹 **Payment Transaction API Tests**
-
-* Process payment transaction Message Validation
-* Process payment trnxId Validation
-* Process payment transaction fee Validation
-* Process payment transaction currentBalance Validation
-
----
-
-### 🔹 **Deposit Money API Tests**
-
-* Deposit Money Message Validation
-* Deposit Money trnxId Validation
-* Deposit Money commission Validation
-* Deposit Money currentBalance Validation
-* HTTP Status 200
-
----
-
-### 🔹 **Merchant Balance Validation**
-
-Example failing test:
-
-```
-Merchant balance updated correctly | AssertionError: expected 205 to deeply equal 204.75
-```
-
-This error typically occurs due to computation mismatch such as:
-
-* Transaction fee not subtracted correctly
-* Backend rounding/precision issues
-* Incorrect previous balance value
-
----
-
-### 🔹 **Login API Test**
-
-Example response:
-
-```
-{"message": "Login success"}
-```
-
-Message validation is performed for this response.
-
----
-
-### 🔹 **Example Test Snippet**
-
-```javascript
-pm.test("HTTP status code Validation", function(){
-    pm.expect(pm.response.code).to.eql(200);
-});
-
-pm.test("SendMoney Message Validation", function(){
-    var jsonData = pm.response.json();
-    pm.expect(jsonData.message).to.include("success");
-});
-```
-
----
-
-### ✔ Postman Runner Support
-
-* Fully compatible with Postman Collection Runner
-* Automated assertions included
-* Environment variables auto-generated (randomId, phoneNumber, token)
-
----
-
-## ⚠️ Error Handling
-
-API returns clear, consistent error responses:
+# Sample Environment Configuration
 
 ```json
 {
-  "success": false,
-  "message": "Insufficient balance"
+  "BaseURL": "http://dmoney.roadtocareer.net",
+  "email": "salman@roadtocareer.net",
+  "password": "1234",
+  "amount": 10,
+  "agent-phone-number": "01502476839",
+  "customer-phone-number": "01502864705",
+  "Merchant-phone-number": "01502866303"
 }
 ```
 
 ---
 
+# Setup Instructions
 
-## 👩‍💻 Author
+## 1. Clone Repository
 
-**Tasnia Sultana Hema**
- QA Engineer
+```bash
+git clone <repository-url>
+```
+
+---
+
+## 2. Import Collection
+
+Import the following collection file into Postman:
+
+```bash
+.Dmoney-Trxn-API-Flow.postman_collection.json
+```
+
+---
+
+## 3. Import Environment
+
+Import the environment file:
+
+```bash
+Dmoney-API.postman_environment.json
+```
+
+---
+
+## 4. Select Environment
+
+Choose the imported environment from the top-right environment dropdown in Postman.
+
+---
+
+# Running the Collection
+
+## Run Using Collection Runner
+
+1. Open Postman
+2. Click Collection Runner
+3. Select the collection
+4. Select environment
+5. Click Run
+
+---
+
+# Automated Validations
+
+The collection validates:
+
+- HTTP status codes
+- API response messages
+- Authentication token generation
+- User information
+- Transaction IDs
+- Balance calculations
+- Transaction fee validation
+- Commission validation
+
+---
+
+# Transaction Flows
+
+## Deposit Flow
+
+```text
+SYSTEM → AGENT
+```
+
+## Withdraw Flow
+
+```text
+CUSTOMER → AGENT
+```
+
+## Send Money Flow
+
+```text
+CUSTOMER → CUSTOMER
+```
+
+## Payment Flow
+
+```text
+CUSTOMER → MERCHANT
+```
+
+---
+
+# Sample Assertions
+
+```javascript
+pm.response.to.have.status(200);
+
+pm.expect(jsonData.message).to.eql("Login successful");
+
+pm.expect(newBalance).to.eql(prevBalance + depositAmount);
+```
+
+---
+
+# Future Improvements
+
+- Newman Integration
+- HTML Reporting
+- CI/CD Integration
+- Data-Driven Testing
+- Negative Test Cases
+- Performance Testing
+
+---
+
+# Author
+
+## Tasnia Sultana Hema
+
+Software Quality Assurance (SQA) Engineer
