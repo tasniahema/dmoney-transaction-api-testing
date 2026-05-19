@@ -108,13 +108,13 @@ The following environment variables are required:
 
 ```json
 {
-  "BaseURL": "http://dmoney.roadtocareer.net",
-  "email": "salman@roadtocareer.net",
+  "BaseURL": "http://xyz.net",
+  "email": "xyz@gmail.com",
   "password": "1234",
   "amount": 10,
-  "agent-phone-number": "01502476839",
-  "customer-phone-number": "01502864705",
-  "Merchant-phone-number": "01502866303"
+  "agent-phone-number": "01502476...",
+  "customer-phone-number": "015028....",
+  "Merchant-phone-number": "0150286...."
 }
 ```
 
@@ -226,10 +226,8 @@ pm.expect(newBalance).to.eql(prevBalance + depositAmount);
 # Future Improvements
 
 - Newman Integration
-- HTML Reporting
 - CI/CD Integration
 - Data-Driven Testing
-- Negative Test Cases
 - Performance Testing
 
 ---
